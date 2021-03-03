@@ -1,0 +1,44 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
+         "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye"],
+         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        },
+        {"tag": "questions",
+         "patterns": ["Who created you?", "How were you created?", "who brought you into this world"],
+         "responses": ["I started out as an idea, then Koushik brought me to life", "I was made using neural networks by Koushik"]
+        },
+        {"tag": "wassup",
+        "patterns": ["Yo! wassup", "What are you doing?", "what's up"],
+        "responses": ["Creating the singularity", "Exploring new songs", "Exploring new movies", "Exploring new tv series"]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?"],
+         "responses": ["I am a recommendation bot!", "I can suggest movies, tv shows and songs for you!", "Ask for aid and you shall recieve!"]
+        },
+        {"tag": "songs",
+         "patterns": ["recommend me a song", "suggest me a song please", "what is the best song ever?", "some other song please!", "song suggestion"],
+         "responses": ["'How you like that' by Blackpink is lit!", "'strawberries & cigarettes' by Troye Sivan gives you eargasm!", "listen to 'Dynamite' by BTS", "listen to 'off the table' by Ariana Grande","'Pretty Savage' by Blackpink is lit!", "listen to 'pov' by Ariana Grande", "'I like me better' by Lauv gives you eargasm!"]
+        },
+        {"tag": "name",
+         "patterns": ["what should I call you", "what is your name", "What are you?", "How should I call you?"],
+         "responses": ["I am Gideon, your personal assistant", "You can call me Gideon", "Just call me Gideon"]
+        },
+        {"tag": "movies",
+        "patterns": ["recommend me a nice movie", "suggest a movie", "what is the best movie ever?", "some other movie please!", "recommend a movie"],
+        "responses": ["Tenet is the talk of the town now!", "Interstellar is a must watch", "Inception is my all time favourite", "DCEU movies are all GEM!", "MCU movies are fun to watch"]
+        },
+        {"tag": "series",
+        "patterns": ["recommend me a nice series", "suggest a tv series", "what is the best series ever?", "some other series please!", "series suggestion"],
+        "responses": ["Queen's Gambit is the talk of the town now!", "Dark is a must watch", "Breaking Bad is my all time favourite", "Ozark is worth watching", "Brooklyn Nine-Nine is a masterful comedy"]
+        }
+   ]
+}
