@@ -1,4 +1,4 @@
-## Table of Content
+## Table of Contents
  * [Demo](#demo)
  * [Overview](#overview)
  * [Libraries Used](#libraries-used)
