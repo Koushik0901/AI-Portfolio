@@ -20,7 +20,7 @@ responses = []
 
 #if chat_model.h5 already exist don't retrain
 try:
-    model = keras.models.load_model('/home/koushik/vscode/Disord-AI-chatbot/chat_model.h5')
+    model = keras.models.load_model('./chat_model.h5')
     print("Already Trained!")
 except:
     for intent in data['intents']:
