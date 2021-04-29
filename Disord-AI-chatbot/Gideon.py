@@ -11,7 +11,7 @@ with open("intents.json") as file:
     data = json.load(file)
 
 #load the trained model
-model = keras.models.load_model('/home/koushik/vscode/Disord-AI-chatbot/chat_model.h5')
+model = keras.models.load_model('./chat_model.h5')
 
 # load tokenizer object
 with open('tokenizer.pickle', 'rb') as handle:
