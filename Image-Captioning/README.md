@@ -3,13 +3,13 @@
  ***A sequence to sequence model to caption images built using PyTorch. This model uses inceptionV3 as encoder and LSTM layers as decoder. This model is trained on Flickr30k dataset.***
 
 ## Demo
-  <p align="center"> <img src="https://github.com/Koushik0901/AI-Portfolio/blob/master/image-captioning/test_examples/surfing.png" width="500" height="320"  /> </p>
+  <p align="center"> <img src="https://github.com/Koushik0901/AI-Portfolio/blob/master/Image-Captioning/test_examples/surfing.png" width="500" height="320"  /> </p>
 <p align="center"> <b>Prediction: <i>a man in wetsuit is surfing .</i></b>
  
-<p align="center"> <img src="https://github.com/Koushik0901/AI-Portfolio/blob/master/image-captioning/test_examples/dirt_bike.png" width="500" height="320"  /> </p>
+<p align="center"> <img src="https://github.com/Koushik0901/AI-Portfolio/blob/master/Image-Captioning/test_examples/dirt_bike.png" width="500" height="320"  /> </p>
 <p align="center"> <b>Prediction: <i>a man in blue helmet is riding a dirt bike on a dirt track .</i></b>
 
-<p align="center"> <img src="https://github.com/Koushik0901/AI-Portfolio/blob/master/image-captioning/test_examples/dog.png" width="500" height="320"  /> </p>
+<p align="center"> <img src="https://github.com/Koushik0901/AI-Portfolio/blob/master/Image-Captioning/test_examples/dog.png" width="500" height="320"  /> </p>
 <p align="center"> <b>Prediction: <i>a dog is running on the beach .</i></b>
 
 ## Running on native machine
