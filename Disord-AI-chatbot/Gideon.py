@@ -50,7 +50,7 @@ class MyClient(discord.Client):
                     await message.channel.send(bot_response.format(message))#sending the message
                 
                 else:
-                    await message.channel.send("I didnt get that. Can you explain or try again.".format(message))
+                    await message.channel.send("I didn't get that. Can you explain or try again.".format(message))
 
 client = MyClient()
-client.run('Nzg3MzQ3NjM0MzY5MjAwMjMw.X9TooA.5ryic7i77Ti_ZS_B_I2XKK7MKGc') #bot token
+client.run('*********************************************') #bot token
