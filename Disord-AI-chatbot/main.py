@@ -4,7 +4,7 @@ import numpy as np
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import LSTM, Dense, Bidirectional, Embedding
+from tensorflow.keras.layers import LSTM, Dense, Embedding, Dropout
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from sklearn.preprocessing import LabelEncoder
@@ -39,7 +39,7 @@ except:
     training_labels = lbl_encoder.transform(training_labels)
 
     vocab_size = 1000
-    embedding_dim = 16
+    embedding_dim = 128
     max_len = 20
     oov_token = "<OOV>"
 
@@ -49,11 +49,11 @@ except:
     sequences = tokenizer.texts_to_sequences(training_sentences)
     padded_sequences = pad_sequences(sequences, truncating='post', maxlen=max_len)#padding the sentences
 
-    #simple callback class that stops the training if the accuracy reaches 97%
+    #simple callback class that stops the training if the accuracy reaches 97.5%
     class myCallback(tf.keras.callbacks.Callback):
         def on_epoch_end(self, epoch, logs={}):
-            if(logs.get('accuracy')>0.965):
-                print("\n\nReached 96.5% accuracy so cancelling training!\n")
+            if(logs.get('accuracy')>0.975):
+                print("\n\nReached 97.5% accuracy so cancelling training!\n")
                 self.model.stop_training = True
 
     callbacks = myCallback()
@@ -61,9 +61,11 @@ except:
     #creating a bidirectional lstm model
     model = Sequential()
     model.add(Embedding(vocab_size, embedding_dim, input_length=max_len))
-    model.add(Bidirectional(LSTM(50, return_sequences=True)))
-    model.add(Bidirectional(LSTM(100, return_sequences=True)))
-    model.add(Bidirectional(LSTM(50)))
+    model.add(Dropout(0.2))
+    model.add(LSTM(50))
+    model.add(Dropout(0.2))
+    model.add(Dense(100, activation='relu'))
+    model.add(Dropout(0.2))
     model.add(Dense(num_classes, activation='softmax'))
 
     model.compile(loss='sparse_categorical_crossentropy', 
@@ -71,7 +73,7 @@ except:
 
     model.summary()
 
-    epochs = 500
+    epochs = 100
     history = model.fit(padded_sequences, np.array(training_labels), epochs=epochs, callbacks=[callbacks])
 
     # to save the trained model
@@ -86,7 +88,3 @@ except:
     # to save the fitted label encoder
     with open('label_encoder.pickle', 'wb') as ecn_file:
         pickle.dump(lbl_encoder, ecn_file, protocol=pickle.HIGHEST_PROTOCOL)
-
-
-
-    
