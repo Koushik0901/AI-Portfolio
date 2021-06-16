@@ -8,15 +8,14 @@
  ![](https://i.imgur.com/o65eqzQ.png)
 
 ## Overview
-<b> This project combines various natural language processing and deep learning techniques like tokenizing, bidirectional long short term memory etc 
-to create a discord AI recommendation bot that suggests you movies, songs and tv shows that is deployed on discord.</b>
+<b>A discord AI recommendation bot that suggests you movies, songs and tv shows that is deployed on discord. This project is a intent classification task. Given an input sentence the model tries to predict it's intent and then a random answer is picked from that intent.</b>
 
 ## Libraries Used
-  * Tensorflow == 2.3.1
-  * scikit-learn == 0.23.2
-  * numpy == 1.18.5
-  * pickle == 1.0.2
-  * discord.py == 1.5.1
+  * Tensorflow
+  * scikit-learn
+  * numpy
+  * pickle
+  * discord.py
 
 ## Techniques Used
   * Label encoding
