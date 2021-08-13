@@ -4,3 +4,6 @@
 [submodule "NeuralNet"]
 	path = NeuralNet
 	url = https://github.com/Koushik0901/NeuralNet.git
+[submodule "FLAIR-Segmentation-MLOPS"]
+	path = FLAIR-Segmentation-MLOPS
+	url = https://github.com/Koushik0901/FLAIR-Segmentation-MLOPS.git
