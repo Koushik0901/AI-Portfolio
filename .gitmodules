@@ -4,3 +4,6 @@
 [submodule "FLAIR-Segmentation-MLOPS"]
 	path = FLAIR-Segmentation-MLOPS
 	url = https://github.com/Koushik0901/FLAIR-Segmentation-MLOPS.git
+[submodule "Image-Captioning"]
+	path = Image-Captioning
+	url = https://github.com/Koushik0901/Image-Captioning.git
