@@ -7,3 +7,6 @@
 [submodule "Image-Captioning"]
 	path = Image-Captioning
 	url = https://github.com/Koushik0901/Image-Captioning.git
+[submodule "Spotify-Music-Recommender"]
+	path = Spotify-Music-Recommender
+	url = https://github.com/Koushik0901/Spotify-Music-Recommender
