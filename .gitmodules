@@ -10,3 +10,6 @@
 [submodule "Spotify-Music-Recommender"]
 	path = Spotify-Music-Recommender
 	url = https://github.com/Koushik0901/Spotify-Music-Recommender
+[submodule "Swift-SRGAN"]
+	path = Swift-SRGAN
+	url = https://github.com/Koushik0901/Swift-SRGAN.git
